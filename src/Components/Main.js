@@ -1,14 +1,15 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {Router, Route} from 'react-router-dom';
+import history from "../history";
 
 import App from './App';
 
 const Main  = () => {
     return (
-        <BrowserRouter>
+        <Router history={history}>
             <Route path={'/:navs'} component={App}/>
             <Route path={'/'} exact component={App}/>
-        </BrowserRouter>
+        </Router>
     )
 };
 
