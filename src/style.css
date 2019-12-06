@@ -1,0 +1,59 @@
+.container {
+    display: inline-flex;
+    width: 100%;
+}
+.sideBar {
+    width: fit-content;
+    min-height: 100vh;
+}
+.rightSide {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+.content {
+    border: 2px solid black;
+    margin: 5px;
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}
+.footer, .content,.header,.sideBar {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 15px;
+}
+.item{
+    border:2px solid black;
+    margin:20px;
+    border-radius:15px;
+    text-align:left;
+    padding: 10px;
+    font-size: 18px;
+    color:black;
+
+}
+.resizeButton{
+    margin-top:75vh;
+}
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+button {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+}
+.link{
+    color:black;
+}
